@@ -40,6 +40,33 @@
     border: none;
     padding: 5px;
 }
+
+
+#signbutt
+{
+    
+    margin-left: 7vw;
+    background-color: rgb(218, 210, 210);
+    border-radius: 15px;
+    padding: 2px;
+}
+
+.signcls:hover{
+    background-color:rgb(61, 60, 60);
+    color:rgb(218, 210, 210);
+    
+}
+.signcls{
+    font-size:18px;
+    margin:0px;
+    border-radius: 15px; 
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+}
+
+
 #form{
     width:130px;
     margin: auto;

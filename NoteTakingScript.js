@@ -57,20 +57,20 @@ function deleteNode(index) {
     show();
 }
 
-let search = document.getElementById("search-txt");
-search.addEventListener("input", () => {
-    let value = search.value;
-    let divs = document.getElementsByClassName("divs");
-    Array.from(divs).forEach(function (element) {
-        let para = element.getElementsByClassName("text-note")[0].innerText;
-        if (para.includes(value)) {
-            element.style.display = "block";
-        }
-        else {
-            element.style.display = "none";
-        }
-    });
-});
+// let search = document.getElementById("search-txt");
+// search.addEventListener("input", () => {
+//     let value = search.value;
+//     let divs = document.getElementsByClassName("divs");
+//     Array.from(divs).forEach(function (element) {
+//         let para = element.getElementsByClassName("text-note")[0].innerText;
+//         if (para.includes(value)) {
+//             element.style.display = "block";
+//         }
+//         else {
+//             element.style.display = "none";
+//         }
+//     });
+// });
 let add1 = document.getElementById("add");
 let added = document.getElementById("added");
 add1.addEventListener("click", () => {
