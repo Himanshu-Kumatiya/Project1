@@ -7,7 +7,7 @@
   $servername="localhost";
     $username="root";
     $password="";
-    $database="digitalnotes";
+    $database="digitalNotes";
     $login=false;
     $showalert1=false;
     $conn=mysqli_connect($servername,$username,$password,$database);
@@ -19,9 +19,8 @@
     $sql="SELECT `name` FROM `user` where username='$un' ";
     $result=mysqli_query($conn,$sql);
     $element=mysqli_fetch_assoc($result);
+
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,9 +31,8 @@
 
     <title>Notes taking website</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="styleNT.css">
-    <link rel="stylesheet" media="screen and (max-width:250px)" href="styleNTPhone.css">
-
+    <link rel="stylesheet" href="styleNT.css?version=0.8">
+    <link rel="stylesheet" media="screen and (max-width:500px)" href="styleNTPhone.css?version=0.4">
 </head>
 
 <body>
@@ -69,6 +67,7 @@
             </div>
         </div>
         <div id="addbtn">
+            
             <button id="btn1">Add</button>
         </div>
     </section>
@@ -80,7 +79,7 @@
         
         </div>
     </section>
-    <script src="userloggedin.js"></script>
+    <script src="userloggedin.js?version=0.6"></script>
 </body>
 
 

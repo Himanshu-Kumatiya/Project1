@@ -1,5 +1,5 @@
 let notes = document.getElementById("notes-list");
-
+let confirm=document.getElementById("confirm");
 if (localStorage.getItem("notes") == null) {
     notes.innerHTML = "<div style='margin:50px; text-align:center;font-size:25px;'>You have no notes yet</div>";
 }
@@ -28,8 +28,9 @@ function add() {
         array.push(arr);
         json = JSON.stringify(array);
         localStorage.setItem("notes", json);
-        let confirm=document.getElementById("confirm");
-        confirm.innerHTML='<div class="alert alert-success text-center" role="alert"> your note is successfully added</div>';
+        
+        confirm.style.display="block";
+        confirm.innerHTML='<div class="alert alert-success text-center" role="alert"> Your note is successfully added</div>';
         show();
         
     }
@@ -44,7 +45,7 @@ function show() {
                     <textarea class="text-note">${array[index][1]}</textarea>
                     <div >
                         <div class="date">${array[index][2]}</div>
-                        <button class="delete date" id="${index}" onclick="deleteNode(this.id)">Delete</button>
+                        <button class="delete" id="${index}" onclick="deleteNode(this.id)">Delete</button>
                     </div>  
                 </div>`;
     });
@@ -88,5 +89,5 @@ added.addEventListener("click", () => {
     let notesd = document.getElementById("notes");
     text.style.display = "none";
     notesd.style.display = "flex";
-
+    confirm.style.display="none";
 });

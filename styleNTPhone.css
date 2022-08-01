@@ -1,5 +1,5 @@
 #logo{
-    font-size: 15vw;
+    font-size: 25px;
 }
 #buttons{
     margin: 10px;
@@ -32,9 +32,10 @@
 }
 .text-note
 {
+    width:30vw;
     font-size: 10px;
 }
-.delete
+.option
 {
     font-size: 10px;
 }

@@ -2,7 +2,7 @@
     $servername="localhost";
     $username="root";
     $password="";
-    $database="digitalnotes";
+    $database="digitalNotes";
     $showalert=false;
     $showalert1=false;
     if($_SERVER["REQUEST_METHOD"]=="POST")
